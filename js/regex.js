@@ -3,9 +3,9 @@ function executa(event) {
 	event.preventDefault();
 
 	limparResultados();
-	var valores 	 = pegaValoresDoForm();
-
-    var resultados 	 = executaRegex(valores);
+	
+	var valores = pegaValoresDoForm();
+    var resultados = executaRegex(valores);
     
     imprimeResultadoNoInput(resultados);
     highlightResultados(resultados, valores.target);
